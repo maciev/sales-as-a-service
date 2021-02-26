@@ -16,16 +16,14 @@ function Navbar(props: Props): ReactElement {
       }
     >
       <div className="container px-24 mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          <a
+        <div className="w-24 relative flex justify-between  lg:static lg:block lg:justify-start">
+          <img
             className={
-              (props.transparent ? "text-blue-300" : "text-gray-800") +
-              " title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+              (props.transparent ? "w-24" : "w-24") +
+              "leading-relaxed inline-block mr-4 py-2"
             }
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-          >
-            Tailwind Starter Kit
-          </a>
+            src="https://www.growth-hackers.net/wp-content/uploads/2020/04/Knarr-Data-Analytics-SaaS-Logo-Transparent.png"
+          ></img>
           <button
             className="cursor-pointer text-xl bleading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"

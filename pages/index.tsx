@@ -8,6 +8,7 @@ const IndexPage = () => (
     <Featured />
     {/*<Team />*/}
     {/*<Finisher />*/}
+    <Call />
     <Contact />
   </Layout>
 );
@@ -26,16 +27,17 @@ const Hero = () => (
       <div className="items-center flex flex-wrap p-28">
         <div className="w-full lg:w-6/12 ml-auto mr-auto  text-center">
           <div className="">
-            <h1 className=" font-semibold text-5xl">Cold-Email-as-a-Service</h1>
-            <h1 className=" font-semibold text-5xl">MQLs-as-a-Service</h1>
-            <h1 className=" font-semibold text-5xl">Leads-as-a-Service</h1>
+            <h1 className=" font-semibold text-5xl">
+              Prospecting-as-a-Service
+            </h1>
+
             <p className="mt-4 text-lg">
-              Nobody likes prospecting. Especially when you're busy building
-              products and scaling teams. We prospect for your business, so you
-              can spend more time selling.
+              <b className="text-blue-500">Email prospecting isn't fun. </b>
+              Especially when you have products to build and teams to scale. We
+              prospect for your business, so you can spend more time closing.
             </p>
           </div>
-          <div className="flex max-w-xs mt-24 mx-auto items-center w-full">
+          <div className="flex max-w-xs my-24  mx-auto items-center w-full">
             <button
               className="flex-1 bg-blue-100 text-blue-500 my-auto active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
               type="button"
@@ -53,11 +55,14 @@ const Hero = () => (
               <i className="fas fa-chevron-right ml-2"></i>
             </button>
           </div>
-          <img
-            className="pt-24"
-            src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/5f8e107fbbb367a8b90c0f89_Visual%20-%20Homepage%20-%20Laptop%20product-p-2000.png"
-            alt=""
-          />
+          <video
+            className="rounded"
+            src="https://cdn.dribbble.com/users/442243/screenshots/8283178/media/3c48837195647e42b83e1ef6a7c38ef8.mp4"
+            muted={true}
+            preload="auto"
+            loop={true}
+            playsInline={true}
+          ></video>
         </div>
       </div>
     </div>
@@ -66,60 +71,75 @@ const Hero = () => (
 
 const Processes = () => (
   <section className="pb-20 mt-12">
-    <div className="container max-w-screen-lg mx-auto px-8">
+    <div className="container lg:w-6/12 mx-auto">
       <div className="flex ">
         <div className="mr-16">
           {" "}
           <h3 className="text-3xl font-semibold">Our process</h3>
         </div>
         <div className="pr-18 ">
-          <div className="flex mr-48 mb-10 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
-            <div className="rounded-full bg-red-300 text-center h-12 w-12">
-              <h1 className="items-center text-red-500">
-                <b>1</b>
+          <div className="flex mr-48 mb-4 py-4 pl-4  rounded-lg border-2 border-gray-100 items-center shadow">
+            <div className="text-center">
+              <h1 className=" rounded-full w-10 h-10 bg-blue-100 text-2xl text-blue-500">
+                <b>1.</b>
               </h1>
             </div>
-            <div className="pl-6">
+            <div className="px-6">
               We hop on a quick call to make sure we're on the same wavelength
               about your sales priorities.
             </div>
           </div>
-          <div className="flex ml-48 mb-10 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
-            <div className="rounded-full bg-red-300 text-center h-12 w-12">
-              <h1 className="items-center text-red-500">
-                <b>2</b>
+          <div className="flex ml-48 mb-4 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
+            <div className="text-center">
+              <h1 className="rounded-full w-10 h-10 bg-blue-100 text-2xl text-blue-500">
+                <b>2.</b>
               </h1>
             </div>
-            <div className="pl-6">
+            <div className="px-6">
               According to our plan, we populate and vet our list of prospects.
               This means weeding out bounced emails and making sure the lead's
               titles match.
             </div>
           </div>
-          <div className="flex mr-48 mb-10 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
-            <div className="rounded-full bg-red-300 text-center h-12 w-12">
-              <h1 className="items-center text-red-500">
-                <b>3</b>
+          <div className="flex mr-48 mb-4 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
+            <div className=" text-center">
+              <h1 className="rounded-full w-10 h-10 bg-blue-100 text-2xl text-blue-500">
+                <b>3.</b>
               </h1>
             </div>
-            <div className="pl-6">
+            <div className="px-6">
               Our specialists craft high-touch, high-converting emails that
               resignate with your target audience (with the goal of booking
               meetings in mind!)
             </div>
           </div>
-          <div className="flex ml-48 mb-10 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
-            <div className="rounded-full bg-red-300 text-center h-12 w-12">
-              <h1 className="items-center text-white text-red-500">
-                <b>4</b>
+          <div className="flex ml-48 mb-4 py-4 pl-4 rounded-lg border-2 border-gray-100 items-center shadow">
+            <div className=" text-center">
+              <h1 className="rounded-full w-10 h-10 bg-blue-100 text-2xl text-blue-500">
+                <b>4.</b>
               </h1>
             </div>
-            <div className="pl-6">
+            <div className="px-6">
               We hand the leads and meetings off to you, directly to your inbox.
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+);
+const Call = () => (
+  <section className="pb-20 mt-12">
+    <div className="flex flex-col container items-center lg:w-6/12 mx-auto">
+      <h1 className="text-5xl font-bold mb-8">Prospecting automated</h1>
+      <p className="text-lg mb-8">Get in touch, and let's start sending!</p>
+      <button
+        className="flex-1 bg-blue-100 text-blue-500 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+        type="button"
+        style={{ transition: "all .15s ease" }}
+      >
+        Chat with us
+      </button>
     </div>
   </section>
 );
@@ -352,8 +372,8 @@ const Featured = () => (
 //);
 
 const Contact = () => (
-  <section className="relative block py-24 lg:pt-24 ">
-    <div className="container max-w-screen-lg  mx-auto px-4">
+  <section className="relative block py-24 bg-blue-300 rounded lg:pt-24 ">
+    <div className="container max-w-screen-lg mx-auto px-4">
       <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
         <div className="w-full lg:w-6/12 px-4">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg">
